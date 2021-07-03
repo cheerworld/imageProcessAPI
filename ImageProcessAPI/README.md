@@ -37,7 +37,6 @@ fetch(url, {
 
 The following endpoints are available:
 
-| Endpoints                                                                                                      | Usage                  | Params                                                                                                                                     |
-| -------------------------------------------------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `GET /api/images?fliename={filename}&width={width}&height={height}`                                            | Get a processed image. | **filename** - [string] You can choose from ['appleTree', 'field', 'flower', 'garden', 'lilies', 'lotus', 'pond', 'seaside'] for filename. |
-| **width** - [number]. **height** - [number]. For width and height, you need to enter numbers that are above 0. |
+| Endpoints                                                           | Usage                  | Params                                                                                                                                                                                                                                  |
+| ------------------------------------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `GET /api/images?fliename={filename}&width={width}&height={height}` | Get a processed image. | **filename** - [string] You can choose from appleTree, field, flower, garden, lilies, lotus, pond, seaside for filename. **width** - [number]. **height** - [number]. For width and height, you need to enter numbers that are above 0. |
