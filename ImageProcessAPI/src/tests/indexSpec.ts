@@ -22,7 +22,7 @@ describe('Test endpoint responses', () => {
     it('send message to browser for endpoint "/api/404"', async () => {
       const response = await request.get('/api/404');
       expect(response).withContext(
-        'Wrong route, please enter a valid route, such as: http://localhost:3000/api/images'
+        'Wrong route, please enter a valid route, such as: http://localhost:8000/api/images'
       );
     });
   });
