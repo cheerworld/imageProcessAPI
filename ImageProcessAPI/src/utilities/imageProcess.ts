@@ -11,7 +11,8 @@ const imageProcess = async (
     const outPutPath = `${config.ASSETS_FOLDER}/thumb/${fileName}${width}X${height}.jpg`;
 
     const sharpIt = await sharp(imagePath)
-      .resize({ width, height })
+      .rotate()
+      .resize({ width, height, fit: 'contain' })
       .toFile(outPutPath);
   } catch (e) {
     console.error('Error in imageProcess func', e);
