@@ -21,6 +21,11 @@ To get started developing right away:
   - install all project dependencies with `npm install/yarn add`
   - start the development server with `npm/yarn start`
 
+## App View
+
+![Image Process App View](./appImage/oo.PNG)
+There is a form for the user to fill to get the image processed. You need to enter filename, width, and height to submit this information and get the image processed. After the image is processed, the processed image will show below the submit button.
+
 ## More Information
 
 There is more information regarding the ImageProcessAPI server in
