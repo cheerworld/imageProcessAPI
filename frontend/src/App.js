@@ -10,6 +10,18 @@ function App() {
         <p>This is a frontend for image process.</p>
       </Jumbotron>
       <FormForImage />
+      <footer>
+        <p className="footerP">
+          <span role="img" aria-label="Beach with Umbrella">
+            🏖️{" "}
+          </span>
+          Made by Yuguo Zhao
+          <span role="img" aria-label="Cityscape at Dusk">
+            {" "}
+            🌆
+          </span>
+        </p>
+      </footer>
     </div>
   );
 }
