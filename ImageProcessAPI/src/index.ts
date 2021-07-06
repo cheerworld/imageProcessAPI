@@ -15,7 +15,7 @@ app.get('/', (req: express.Request, res: express.Response): void => {
 
 app.get('*', (req: express.Request, res: express.Response): void => {
   res.send(
-    'Wrong route, please enter a valid route, such as: http://localhost:3000/api/images'
+    'Wrong route, please enter a valid route, such as: http://localhost:8000/api/images'
   );
 });
 
