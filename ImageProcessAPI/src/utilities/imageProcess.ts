@@ -6,11 +6,10 @@ const imageProcess = async (
   width: number,
   height: number
 ): Promise<void> => {
+  const imagePath = `${config.ASSETS_FOLDER}/full/${fileName}.jpg`;
+  const outPutPath = `${config.ASSETS_FOLDER}/thumb/${fileName}${width}X${height}.jpg`;
   try {
-    const imagePath = `${config.ASSETS_FOLDER}/full/${fileName}.jpg`;
-    const outPutPath = `${config.ASSETS_FOLDER}/thumb/${fileName}${width}X${height}.jpg`;
-
-    const sharpIt = await sharp(imagePath)
+    await sharp(imagePath)
       .rotate()
       .resize({ width, height, fit: 'contain' })
       .toFile(outPutPath);
