@@ -16,6 +16,15 @@ describe('Test endpoint responses', () => {
       const response = await request.get('/api/images');
       expect(response.status).toEqual(200);
     });
+
+    it('tests the api/images endpoint for failed scenario', async () => {
+      const response = await request.get(
+        '/api/images?filename=op&width=200&height=200'
+      );
+      expect(response.text).toBe(
+        'Invalid file name, not found. Please enter a valid file name. Such as: http://localhost:8000/api/images?filename=flower&width=200&height=200'
+      );
+    });
   });
 
   describe('Test a wrong endpoint', () => {
